@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "$year is "
+if (( year % 400 == 0 ||
+      year % 4 == 0 && year % 100 != 0 ))
+then
+  true
+else
+  echo -n 'not '
+fi
+echo 'a leap year.'

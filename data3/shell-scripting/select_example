@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Enter the number of the file you want to see."
+select FILENAME in *
+do 
+   head -5 $FILENAME
+done
+
+#select FILENAME in *
+#do
+#   if [[ $REPLY -eq 'bye' ]]; then break; fi
+#   head -5 $FILENAME
+#done

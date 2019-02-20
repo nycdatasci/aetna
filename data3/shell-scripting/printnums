@@ -1,0 +1,7 @@
+#!/bin/bash
+
+i=1
+while (( i <= 10 )); do
+   echo $(( 11-i ))
+   i=$((i+1))
+done

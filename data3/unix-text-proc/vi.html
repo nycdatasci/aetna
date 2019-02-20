@@ -1,0 +1,720 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="StyleSheet" href="http://thomer.com/style.css" type="text/css" media="screen">
+<link rel="icon" href="http://thomer.com/favicon.ico">
+
+<title>Vi Lovers Home Page</title>
+</head>
+<body >
+
+
+
+
+
+
+
+<table class="outline" summary="">
+<tr>
+    <td colspan="2">
+        
+            <a href="http://thomer.com/vi/vi.html"><img id="header_image" class="top" src="http://thomer.com/cgi-bin/back.jpg" alt="top image"></a>
+        
+    </td>
+</tr>
+<tr>
+    <td align="left" valign="top">
+        <a href="http://thomer.com/index.html">home</a>
+        &nbsp;/&nbsp;
+        <a href="http://thomer.com/pages.html">pages</a>
+        &nbsp;/&nbsp;
+        <a href="http://thomer.com/howtos/index.html">tech tips</a>
+        &nbsp;/&nbsp;
+        <a href="http://thomer.com/contact.html">contact</a>
+    </td>
+    <td align="right" valign="top">
+        <a href="http://thomer.com/about.html">about</a>
+    </td>
+</tr>
+</table>
+
+<div class="content">
+
+<style type="text/css">
+table.overview {
+    font-size: 75%;
+    border-width: 1px;
+}
+</style>
+
+<p align="center"><i><b>"The Vi Lovers Home Page ... this makes a great
+starting point."</b></i><br/>
+ (<a href="http://www.ora.com/catalog/vi6/">Learning the vi Editor, 6th
+Edition, O'Reilly</a>, page 300)<br/>
+<br/>
+<img src="http://thomer.com/vi/anim_written_in_vi.gif">
+</p>
+
+<h3>Contents</h3>
+
+<a href="#intro">Introduction</a><br/>
+ <a href="#author">The author</a><br/>
+ <a href="#why">Should I use Vi?</a><br/>
+ <a href="#versions"><b>Vi versions</b></a><br/>
+ <a href="#manuals">Vi pages/manuals/tutorials</a><br/>
+ <a href="#faqs">Vi FAQs</a><br/>
+ <a href="#ftpsite">Vi FTP sites</a><br/>
+ <a href="#macros">Vi macros</a><br/>
+ <a href="#other">Vi...Other</a> <a name="intro"></a> 
+
+<h3>Introduction</h3>
+
+<p>Vi (pronounce: "vee eye", not "six", not "vye") is an editor. An
+editor is a program to edit files. Goodbye.</p>
+
+<p>Although other stories exist, the true one tells that Vi was originally
+written by Bill Joy in 1976. Bill took the sources of <i>ed</i> and <i>
+ex</i>, two horrendous programs for Unix that try to enable a human being to
+edit files, and created Vi. A truly remarkable, and somewhat paradoxical,
+event. Read the <a href="http://www.cs.pdx.edu/~kirkenda/joy84.html">interview
+with Bill Joy</a> for a more accurate history of Vi.
+
+<p>People got attached to Vi, and eventually it got included in System V.
+From there on history has covered its traces and now Vi has evolved in many
+different versions for many, many platforms. The basic concept of Vi,
+however, has not changed over the years.</p>
+
+<p><b>The Vi Lovers Home Page</b> has links to the latest version of different
+Vi implementations. In addition, there are links to useful documentation,
+FAQs, and other (better) Vi related resources. This is the best place to be
+for every Vi user or Vi user wannabe.</p>
+
+<a name="author"></a> 
+
+<h3>The author (of this page)</h3>
+
+<p>My name is Thomer M. Gil [<a href="http://thomer.com/pronunciation.html"><img
+class="noborder" src="http://thomer.com/pics/audio.gif"></img></a>].  I am a Ph.D.
+student in Computer Science hanging out at <a
+href="http://www.csail.mit.edu">CSAIL</a>, the Laboratory for Computer
+Science</a>) at <a href="http://www.mit.edu">MIT</a>. I started using Vi in
+1994 when I was forced to do so by someone else.  I have a
+<a href="http://thomer.com/">home page</a>, I do <a
+href="http://thomer.com/papers.html">research</a>, I sometimes write <a
+href="http://thomer.com/software.html">software for fun</a>, and I enjoy going on <a
+href="http://thomer.com/cycling/">long cycling trips</a>. The morbidly interested can
+look at <a href="http://thomer.com/misc/face.html">photos of me</a>, using <a
+href="http://iciclelanding.com">iciclelanding.com</a>: a free, online photo
+album site I created.
+
+</p>
+
+<p>I use Vim because I simply don't know of a better editor, but, admittedly,
+I haven't seriously tried anything else.</p>
+
+<a name="why"></a> 
+
+<h3>Should I use Vi?</h3>
+
+<p>Which editor to use is mainly a matter of taste, style, and needs. Big
+chance that Vi is OK for---at least---the last one.</p>
+
+<p>The long story is that, even though Vi is somewhat awkward to use at first,
+it enables fast, simple, and effective editing once you get the hang of it.
+(See also <a href="http://www.viemu.com/a-why-vi-vim.html">"Why, oh WHY, do
+those #?@! nutheads use vi?"</a>.) A key concept in Vi is combining a certain
+<i>action</i> (delete, copy to buffer, capitalize, etc.) with
+a <i>movement</i> (go to line 25, go to end of document, go to next occurrence
+of "foo," go to 2nd occurrence of character "x" in this line, etc.). The
+action is performed on all lines or characters between the current cursor
+position and the destination cursor position. Vi is extremely powerful in
+moving around within (or between) files---Vim in particular is excellent. You
+can jump to a specific line, to the line where you were before jumping to the
+current line, to the line in the middle of the screen, to the line where you
+just changed "foo" into "bar," etc. You'll never have to mess with arrow keys
+to move around within a file. Finally, I observe that an effective Vi user
+simply edits files faster than Emacs people. Last but not least, you don't
+need a third hand (or nose) to type impossible key combinations. Don't get me
+wrong: Emacs is a great operating system---it lacks a good editor, though.</p>
+
+<p>Vi has its dark sides, too. The biggest one is the need to step back
+before leaping forward when you are new to Vi. You cannot use Vi properly
+before knowing at least a handful of commands. This makes the threshold
+rather high. Vi doesn't get fast before you know 25 commands or so, and you
+won't be the cool dude(tte) before you know even more. Note that this is also
+true for Emacs. However, Emacs is much easier to use as a newbie.</p>
+
+<p>Rather confusing to new users is the empty screen that stares at them when
+Vi starts and not being able to simply start typing.</p>
+
+<p>There is no conclusion. If you are a Windows user and you are forced to
+work under Unix for a week: don't learn Vi. However, if you need a good,
+multi-purpose editor, then Vi is a very good, highly recommended choice.
+Invest some time and learn Vi. There are many good links on this page to get
+you started.</p>
+
+<p>Let me finish this discussion by a quote from my dear officemate, <a
+href="http://www.mit.edu/~golem">Chris</a>:
+"<tt>less</tt> is my favorite editor.  Too bad it can't actually edit
+files."
+
+<h3>Vi versions</h3>
+
+<p>Look at the filename to get some idea about the version...</p>
+
+<p>If you get rubble on your screen after clicking on a filename in this
+table, stop the transfer, click the filename again with the right
+mouse-button, and click "Save Link As."</p>
+
+<a name="versions"></a> 
+
+<h4>Unix, MS-DOS, Windows, and OS/2</h4>
+
+<p><b>This overview is not frequently updated!</b>  You should check for
+newer versions.</p>
+
+<table class="overview" border="1" cellpadding="2">
+<tr>
+<td>&nbsp;</td>
+<td align="center"><b>Unix and/or source</b> </td>
+<td align="center"><b>MS-DOS</b> </td>
+<td align="center"><b>Windows 3.x</b></td>
+<td align="center"><b>Windows 9x/2k/NT/XP</b></td>
+<td align="center"><b>OS/2</b> </td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.vim.org">VIM</a></b><sup><b>1</b></sup></td>
+<td align="center"><a href=
+"ftp://ftp.vim.org/pub/vim/unix/vim-6.3.tar.bz2">vim-6.3.tar.bz2</a></td>
+<td align="center"><a href="ftp://ftp.vim.org/pub/vim/pc/vim63d16.zip">
+vim63d16.zip</a></td>
+<td align="center"><i>Use MS-DOS</i></td>
+<td align="center"><a href="ftp://ftp.vim.org/pub/vim/pc/gvim63.zip">
+gvim63.zip</a></td>
+<td align="center"><a href="ftp://ftp.vim.org/pub/vim/os2/vim63os2.zip">
+vim63os2.zip</a></td>
+</tr>
+
+<tr>
+<td><a href="http://elvis.the-little-red-haired-girl.org/"><b>
+Elvis</b></a><sup><b>2</b></sup></td>
+<td align="center"><a href=
+"ftp://ftp.cs.pdx.edu/pub/elvis/elvis-2.2_0.tar.gz">
+elvis-2.2_0.tar.gz</a></td>
+<td align="center"><a href=
+"ftp://ftp.cs.pdx.edu/pub/elvis/elvis-2.2_0-msdos.tar.gz">
+elvis-2.2_0-msdos.tar.gz</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href=
+"ftp://ftp.cs.pdx.edu/pub/elvis/elvis-2.2_0-win32.tar.gz">
+elvis-2.2_0-win32.tar.gz</a></td>
+<td align="center"><a href=
+"http://www.fh-wedel.de/pub/fh-wedel/staff/herbert/elvis/elvis-2.2_0-os2.tar.gz">
+elvis-2.2_0-os2.tar.gz</a></td>
+</tr>
+
+<tr>
+<td><b><a href="http://dickey.his.com/vile/vile.html">
+VILE</a></b></td>
+<td align="center"><a href="ftp://invisible-island.net/vile/vile.tar.gz">
+vile-tar.gz</a></td>
+<td align="center"><a href="ftp://invisible-island.net/vile/vile-dos.zip">
+vile-dos.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href="ftp://invisible-island.net/vile/vile-w32.zip">
+vile-w32.zip</a></td>
+<td align="center"><a href="ftp://invisible-island.net/vile/vile-os2.zip">
+vile-os2.zip</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.softwareonline.org/products.html"><b>
+Lemmy</b></a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href="http://www.softwareonline.org/lemmy45.exe">lemmy45.exe</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.bostic.com/vi/">Nvi</a></b></td>
+<td align="center"><a href=
+"ftp://ftp.sleepycat.com/pub/nvi-1.79.tar.gz">
+nvi-1.79.tar.gz</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://nosuch.com/tjt/stevie/">Stevie</a></b></td>
+<td align="center"><a href="ftp://ftp.simtel.net/pub/simtelnet/msdos/editor/stevi69s.zip">stevie69s.zip</a></td>
+<td align="center"><a href="ftp://ftp.simtel.net/pub/simtelnet/msdos/editor/stevi69s.zip">stevie69s.zip</a><sup>3</sup></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href="ftp://ftp.cdrom.com/pub/os2/editors/stvi369g.zip">stvi369g.zip</a></td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.winvi.de/">WinVi</a></b></td>
+<td align="center"><a href="http://www.winvi.de/wsrc297.zip">wsrc297.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href="http://www.winvi.de/winvi16.zip">
+winvi16.zip</a></td>
+<td align="center"><a href="http://www.winvi.de/winvi32.zip">
+winvi32.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://xvi.sf.net/">xvi</b></td>
+<td align="center"><a href="http://prdownloads.sourceforge.net/xvi/xvi-2.47.tar.gz?use_mirror=voxel">xvi2.47.tgz</a></td>
+<td align="center"><a href=
+"ftp://ftp.simtel.net/pub/simtelnet/msdos/editor/xviexe.zip">
+xviexe.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href="http://dl.winsite.com/bin/downl?500000026755">
+xvi.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.fwiarda.com/software/pvic.htm">Pvic</a></b></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href="http://www.fwiarda.com/software/pvic_dos.zip">
+pvic_dos.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<!-- <a href="http://www.fwiarda.com/pvic_os9.zip">
+pvic_os9.zip</a></td> -->
+</tr>
+
+<tr>
+<td><b><a href="http://www.math.fu-berlin.de/~guckes/calvin/">
+Calvin</a></b></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a href=
+"ftp://ftp.simtel.net/pub/simtelnet/msdos/editor/calvin23.zip">
+calvin23.zip</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://bvi.sourceforge.net/download.html">
+Bvi</a></b></td>
+<td align="center"><a
+href="http://prdownloads.sourceforge.net/bvi/bvi-1.3.2.src.tar.gz">bvi-1.3.2.src.tar.gz</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://ex-vi.sourceforge.net/">
+ex-vi</a></b></td>
+<td align="center"><a
+href="http://prdownloads.sourceforge.net/ex-vi/ex-040605.tar.gz?download">ex-040605.tar.gz</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.pell.portland.or.us/~orc/Code/levee/">
+levee</a></b></td>
+<td align="center"><a
+href="http://www.pell.portland.or.us/~orc/Code/levee/levee-current.tar.gz">levee-current.tar.gz</td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.busybox.net/">
+BusyBox's&nbsp;vi</a></b></td>
+<td align="center"><a
+href="http://www.busybox.net/downloads/busybox-1.00.tar.gz">busybox-1.00.tar.gz</td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+
+</table>
+
+<h4>Macintosh, Atari, Amiga and OpenVMS</h4>
+
+<table class="overview" border="1" cellpadding="2">
+<tr>
+<td>&nbsp;</td>
+<td align="center"><b>Macintosh</b> </td>
+<td align="center"><b>Atari</b> </td>
+<td align="center"><b>Amiga</b> </td>
+<td align="center"><b>OpenVMS/Alpha</b> </td>
+<td align="center"><b>OpenVMS/VAX</b> </td>
+</tr>
+
+<tr>
+<td><b><a href="http://www.vim.org">VIM</a></b></td>
+<td align="center"><a href=
+"ftp://ftp.vim.org/pub/vim/mac/vim5.6.full.fat.sit">
+vim5.6.full.fat.sit</a></td>
+<td align="center"><a href=
+"ftp://ftp.vim.org/pub/vim/atari/vim-4.6.mint.bin.tgz">
+vim-4.6.mint.bin.tgz</a></td>
+<td align="center"><a href="ftp://ftp.vim.org/pub/vim/amiga/vim56bin.tgz">
+vim56bin.tgz</a></td>
+<td align="center"><a href="ftp://ftp.vim.org/pub/vim/vms/vim-56-alpha.zip">
+vim-56-alpha.zip</a></td>
+<td align="center"><a href="ftp://ftp.vim.org/pub/vim/vms/vim-56-vax.zip">
+vim-56-vax.zip</a></td>
+</tr>
+
+<tr>
+<td><b><a href="http://dickey.his.com/vile/vile.html">
+VILE</a></b></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><a
+href="http://www.openvms.compaq.com/freeware/freeware50/vile092/">
+vile-9.2</a></td>
+<td align="center"><a
+href="http://www.openvms.compaq.com/freeware/freeware50/vile092/">
+vile-9.2</a></td>
+</tr>
+
+<tr>
+<td><b><a href="http://nosuch.com/tjt/stevie/">Stevie</a></b></td>
+<td align="center"><a href=
+"http://www.umich.edu/~archive/mac/util/text/stevie3.69+.sit.hqx">
+stevie3.69+.sit.hqx</a></td>
+<td align="center"><a href=
+"ftp://src.doc.ic.ac.uk/packages/atari/uni-paderborn/tools/edit/stevie/stevie.lzh">
+stevie.lzh</a><sup>4</sup></td>
+<td align="center"><a href=
+"http://wuarchive.wustl.edu/pub/aminet/text/edit/Stevie.lha">
+Stevie.lha</a></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+<td align="center"><i>Not&nbsp;available</i></td>
+</tr>
+</table>
+
+<h4>Some important (foot)notes</h4>
+
+<table border="0" cellpadding="3">
+<tr>
+<td>&nbsp;</td>
+<td>There are a number of different VIM mirror sites. Please visit the <a
+href="http://www.vim.org/mirrors.php">VIM Mirrors</a> page to
+find a mirror site near you.</td>
+</tr>
+
+<tr>
+<td valign="top"><b>1</b></td>
+<td>You should read <a href=
+"http://vimdoc.sourceforge.net/htmldoc/usr_90.html">VIM Installation Help</a>.
+</td>
+</tr>
+
+<tr>
+<td valign="top"><b>2</b></td>
+<td>For Elvis for MS-DOS you might need <a href=
+"ftp://ftp.cs.pdx.edu/pub/elvis/untardos.exe">untardos.exe</a> to untar the
+thing. If you download Elvis for Windows 95/NT you might need <a href=
+"ftp://ftp.cs.pdx.edu/pub/elvis/untarw32.exe">untarw32.exe</a> to untar
+it.</td>
+</tr>
+
+<tr>
+<td valign="top"><b>3</b></td>
+<td>Stevie is version 3.69b.</td>
+</tr>
+
+<tr>
+<td valign="top"><b>4</b></td>
+<td>Version unknown. Another, unknown, <a href="ftp://src.doc.ic.ac.uk/packages/atari/uni-paderborn/tools/edit/vi/vi.lha">Vi for Atari</a> is available.</td>
+</tr>
+</table>
+
+<a name="manuals"></a> 
+
+<h3>Vi pages/manuals/tutorials</h3>
+
+<p><i>(Ordered on decreasing quality and/or applicability)</i></p>
+
+<p><a href=
+"http://directory.google.com/Top/Computers/Software/Editors/Vi/">Vi
+pages in the Google directory</a><br/>
+Vi according to Google.</p>
+
+<p><a href="http://docs.FreeBSD.org/44doc/usd/12.vi/paper.html">An
+Introduction to Display Editing with Vi</a><br/>
+ Written by Bill Joy, creator of Vi. I personally think this is the best
+place to start if you are new to Vi. It takes you by the hand.</p>
+
+<p><a href="http://vimdoc.sf.net">VIM help</a><br/>
+ This is the HTML-ized documentation included in the latest VIM release.</p>
+
+<p><a href="http://www.susnet.co.uk/mastering-the-vi-editor">Mastering the Vi
+editor</a><br/>
+ This is something between a tutorial and a reference manual. If you're new
+to Vi, this is a fine starting point.</p>
+
+<p><a href="http://jmcpherson.org/editing.html">Efficient Editing With vim</a><br/>
+ Focuses on Vim rather than Vi, but this is a great, very terse and simple
+ intro.
+</p>
+
+
+<p><a href="http://unix.t-a-y-l-o-r.com/Vi.html">Vi Editor</a><br/>
+ A fine introduction and reference manual. Good lay-out.</p>
+
+<p><a href="http://www.vmunix.com/~gabor/vi.html">Vi helpfile</a><br/>
+ A terse overview of basic commands with a little explanation on each of
+them. It is not a tutorial, but rather a reference manual. I think it is
+close to being complete.</p>
+
+<p><a href="http://soma.npa.uiuc.edu/docs/vi.macros">Vi macros</a><br/>
+ This page focuses on macros in Vi. It is not meant for beginners, but rather
+for those that want to master the art of writing complex macros.</p>
+
+<p><a href="http://limestone.truman.edu/~dbindner/mirror/vi-ref.pdf">Vi Reference
+Card</a><br/>
+ A card with basic Vi command in TeX, DVI and PostScript format.</p>
+
+<p><a href="http://tnerual.eriogerg.free.fr/vim.html">Vim Reference
+Card</a><br/>
+ A reference card with Vim command in DVI and PDF format.</p>
+
+<p><a
+href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">Graphical
+vi-vim Cheat Sheet and Tutorial</a><br/>
+ A cheat sheet keyboard overlay.</p>
+
+<p><a
+href="http://www.uic.edu/depts/accc/software/unixgeneral/vi101.html">Unix 101:
+vi Editor</a><br/>
+ Introduces the basics in a pretty comprehensible way.</p>
+
+<p><a href="http://www.rru.com/~meo/useful/vi/">Vi Documents</a><br/>
+ A very basic introduction. Good if you're new. Also contains an incomplete,
+but clear reference manual.</p>
+
+<p><a href="http://staff.washington.edu/rells/R110/">Using Vi, the Unix Visual
+Editor</a><br/>
+ Good to start with. Contains many examples. Not complete, though.</p>
+
+<p><a href="http://www.infobound.com/vi.html">First Steps: Vi</a><br/>
+ A step-by-step tutorial. Not bad for a first start.</p>
+
+<p><a href="http://www.msn.fullfeed.com/faq/vi.help">Vi basics</a><br/>
+ A very short introduction that doesn't really help you a great deal.</p>
+
+<p><a href="http://csel.cs.colorado.edu/unix/viintro.html">The Vi
+Editor</a><br/>
+ A very basic one-page introduction.</p>
+
+<p><a href=
+"http://heather.cs.ucdavis.edu/~matloff/UnixAndC/Editors/ViIntro.html">An
+Extremely Quick and Simple Introduction to the Vi Text Editor</a><br/>
+ If you're in a rush...</p>
+
+<p><a href="http://www.jerrywang.net/vi/">Vi for
+Smarties</a><br/>
+ A dumb, step by step tutorial insulting your intelligence.</p>
+
+<p><a href="http://www.cotse.com/viqr.htm">Online Vi quick
+reference</a><br/>
+ That's what it is.
+
+<p><a href="http://ECN.www.ecn.purdue.edu/ECN/Documents/VI/">Vi Tutorial</a><br/>
+ A very slow start. Contains some highly confusing pictures. 
+
+<p><a href="http://salvador.venice.ca.us/library/vi/viguide.html">A
+beginner's guide to Vi</a><br/>
+ This is not at all a beginner's guide. It is very incomplete and too terse
+for beginners.</p>
+
+<p><a href=
+"http://www.hotwired.com/webmonkey/html/97/37/index1a.html?collection=backend">
+Introduction to Vi</a><br/>
+ A lot of hot air. No content. Stupid.</p>
+
+<p><a href=
+"http://www.hotwired.com/webmonkey/html/97/40/index1a.html?collection=backend">
+Advanced Vi</a><br/>
+ Continuation of previous one. Advanced stupidity. Stay away from this
+one.</p>
+
+<a name="faqs"></a> 
+
+<h3>Vi FAQs</h3>
+
+<p><a href="http://www.faqs.org/faqs/editor-faq/vi/part1/">Basic Vi
+FAQ</a><br/>
+ I bet it will answer a lot of questions if you're new to it.</p>
+
+<p><a href="http://www.faqs.org/faqs/editor-faq/vi/part2/">Advanced Vi
+FAQ</a><br/>
+ Continuation of previous one, but doesn't really concern Vi itself, but
+rather Vi-related things.</p>
+
+<p><a href=
+"http://www.edu.physics.uch.gr/~danalis/manuals/vi/faq_frames.html">Vi Editor
+FAQ</a><br/>
+ Except for annoying frames, it's OK.</p>
+
+<p><a href="http://www.vim.org/faq/">VIM FAQ</a><br/>
+ On itself quite OK, but it hasn't been updated in a long time.</p>
+
+<a name="ftpsite"></a> 
+
+<h3>Vi FTP sites</h3>
+
+<p><a href="ftp://ftp.uu.net/pub/text-processing/vi/">ftp://ftp.uu.net/pub/text-processing/vi/macros</a><br/>
+A bunch of Vi macros, docs, etc. It hasn't been updated for a long time, but
+that doesn't really hurt the quality. Face it, Vi is timeless.
+
+<p><a href="http://ringtail.its.monash.edu.au/pub/vi/">
+http://ringtail.its.monash.edu.au/pub/vi</a><br/>
+Mirror</p>
+
+<p><a href="ftp://algos.inesc.pt/pub/users/cdua/vi-lib.tar.gz">
+ftp://algos.inesc.pt/pub/users/cdua/vi-lib.tar.gz</a><br/>
+A set of Vi macros.</p>
+
+<a name="macros"></a> 
+
+<h3>Vi macros</h3>
+
+<p><a href="./vimacros/dot.exrc.bin">Vi macros for writing HTML</a><br/>
+Some macros that do some nice tricks that might come to hand when writing
+HTML.</p>
+
+<p><a href="http://ringtail.its.monash.edu.au/pub/vi/macros/hanoi.Z">Towers of Hanoi</a><br/>
+A classic example of how people waste their time. This macro solves the
+Towers of Hanoi puzzle.
+
+</p>
+
+<p><a href="http://ringtail.its.monash.edu.au/pub/vi/macros/turing.tar.Z">Turing
+Machine</a><br/>
+ Need I say more? Take a look!</p>
+
+<p><a href="http://ringtail.its.monash.edu.au/pub/vi/macros">
+http://ringtail.its.monash.edu.au/pub/vi/macros</a><br/>
+More macros.</p>
+
+<a name="other"></a> 
+
+<h3>Vi... Other</h3>
+
+<p><a href="http://www.splange.freeserve.co.uk/misc/vi.html">The Cult of
+Vi</a><br/>
+ Unabashed advocacy.</p>
+
+<p><a href="http://ext2.org/99/02/vim.html">Interview with the
+VIMpire</a><br/>
+ An interview with Bram Moolenaar, creator of VIM.</p>
+
+<p><a href="http://www.geekcheat.com">Vi merchandise</a><br/>
+ Vi reference mugs, Vi reference mouse-pads and Vi t-shirts! I have the mugs,
+and I must say... tea gets a whole new dimension from these mugs.</p>
+
+<p><a href="news:comp.editors">comp.editors</a><br/>
+ Editor newsgroup. Discussion around Vi, VIM and other editors. A lot of
+questions, answers and nonsense.</p>
+
+<p><a href="http://www.cs.rpi.edu/~kennyz/doc/humor/vi.humor">Addicted To
+Vi</a><br/>
+ A song to the tune of "Addicted to Love".</p>
+
+<p><a
+href="http://www.oreilly.com/pub/a/oreilly/ask_tim/1999/unix_editor.html">Does
+Tim O'Reilly use Emacs or Vi?</a><br/>
+ He explains it himself.</p>
+
+<p><a href="http://www.sbernard.ee/vince.html">The <i>true</i> story behind
+Vi</a><br/>
+ The story of Vince Idiot. A parody on how Vi was made.</p>
+
+<p><a href="http://www.darryl.com/vi.shtml">The Vi Powered Logo</a><br/>
+ Mirror Website distributing the green image you also find at the bottom of
+this page.</p>
+
+<p><a href="http://www.math.fu-berlin.de/~guckes/vi/pics.html">Vi Images and
+Logos</a><br/>
+ This a sub-page of the <a href="http://www.math.fu-berlin.de/~guckes/vi/">Vi
+Pages</a>, but I thought it was worth mentioning separately since a lot of
+people like to put Vi images on their Web pages.</p>
+
+<p><a href="http://www.users.qwest.net/~eballen1/perfect.editor.html">Research Shows:
+There is A Perfect Editor</a><br/>
+ A compilation of abstracts of articles on editors.</p>
+
+<!--
+<p><a href="http://www.expert.demon.co.uk/drj/comped.html">A na&iuml;ve
+comparison of computer text editors</a><br/>
+ Worth a good laugh.</p>
+-->
+
+<p><a href="http://www.newsforge.com/article.pl?sid=01/12/04/0326236">EMACS
+vs. vi: The endless geek 'holy war'</a><br/>
+ A reasonably serious attempt to summarize the discussion. Also features the
+ author of this page.</p>
+
+<p><a href="http://www.math.fu-berlin.de/~guckes/vi/knottenbelt.txt">A comparative study
+of Vi and Emacs from the perspective of novice and regular users</a><br/>
+ Tries to quantify the discussion.</p>
+
+<p><a href="http://www.rru.com/~meo/rants/emacs.html">Emacsulation</a><br/>
+ Emacs bashing.</p>
+
+<p><a href="http://www.tarunz.org/~vassilii/srom/">Vassilii's Editors
+Sucks-Rules-O-Meter</a><br/>
+ Scientific, empirical and democratic proof that Emacs sucks and Vi
+rules.</p>
+
+<p><a href="http://www.dina.kvl.dk/~abraham/religion/vi-tutorial.html">Vi
+tutorial</a><br/>
+ Written by an Emacs user. Tries to make fun of Vi.</p>
+
+<p>~<br/>
+ ~<br/>
+ ~<br/>
+ ~<br/>
+ ~<br/>
+ ~<br/>
+ ~<br/>
+ "vi.html" 764 lines, 27533 characters</p>
+
+
+</div>
+
+<div style="clear: both"></div>
+
+<div style="margin-top: 1.2em" class="pagedata">
+URL: <a href="http://thomer.com/vi/vi.html">http://thomer.com/vi/vi.html</a><br/>
+Copyright &copy; 1994-2011 by Thomer M. Gil<br/>
+<!-- Created: in the dark ages<br/> -->
+Updated: 2011/04/27
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+  _uacct = "UA-1315853-1";
+  urchinTracker();
+</script>
+
+</body>
+</html>

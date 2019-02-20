@@ -1,0 +1,8 @@
+#!/bin/bash
+function filename {
+  datestring=$( date "+%m-%d-%y" )
+  newfilename=$1_$datestring
+}
+
+filename 'logs'
+echo $newfilename

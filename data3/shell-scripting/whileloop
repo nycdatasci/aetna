@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -n 'Enter something: '
+read input
+
+while [[ $input != 'quit' ]]; do
+  echo $input
+  echo -n 'Enter something else: '
+  read input
+done

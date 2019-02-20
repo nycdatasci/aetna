@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function hello {
+   echo Hello, $1!
+}
+
+for name in $@; do
+  hello $name
+done
+

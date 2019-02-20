@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for name in mercury venus earth mars jupiter \
+            saturn uranus neptune
+do
+   grep $name *
+done 

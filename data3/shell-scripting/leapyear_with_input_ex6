@@ -1,0 +1,18 @@
+#!/bin/bash
+
+function is_leap_year {
+   IS_LEAP_YEAR=$(( ( $1 % 400 ) == 0  ||
+             ($1 % 4 == 0) && ($1 % 100 != 0) ))
+}
+
+echo -n 'Enter a year: '
+read yr
+is_leap_year $yr
+echo -n "$yr is "
+if ((IS_LEAP_YEAR))
+then
+  true
+else
+  echo -n 'not '
+fi
+echo 'a leap year.'

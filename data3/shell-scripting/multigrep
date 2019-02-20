@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for pattern in $@; do
+   grep "$pattern" *
+done
