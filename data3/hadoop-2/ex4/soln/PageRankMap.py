@@ -15,5 +15,5 @@ for line in sys.stdin:
  	node_to = nodes[1:]
  	links_len = len(node_to)
  	if links_len > 0:
- 		for i in node_to:
- 			print "%s\t%f" % (i, 1.0 / links_len * nodeVal[node_from])
+ 	    for i in node_to:
+ 		print("%s\t%f" % (i, 1.0 / links_len * nodeVal[node_from]))
