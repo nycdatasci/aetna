@@ -25,4 +25,4 @@ def getrecords():
            yield returnval
 
 for record in getrecords():
-   print record[0], max(map(float, record[1]))
+   print(record[0], max(map(float, record[1])))

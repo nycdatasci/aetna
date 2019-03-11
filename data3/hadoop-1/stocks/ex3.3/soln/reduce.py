@@ -3,7 +3,7 @@ import sys
 import string
 
 def getrecords():
-   (key, val) = sys.stdin.readline().split();
+   key, val = sys.stdin.readline().split()
    vals = [val]
    while True:
       if key == None:
@@ -25,4 +25,4 @@ def getrecords():
            yield returnval
 
 for record in getrecords():
-   print record[0], max(map(lambda x: float(x), record[1]))
+   print(record[0], max(map(lambda x: float(x), record[1])))

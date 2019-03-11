@@ -7,4 +7,4 @@ for line in sys.stdin:
    opening = int(record[1])
    closing = int(record[2])
    change = abs(float(closing - opening) / opening)
-   print '%s\t%s' % (record[0], change)
+   print('%s\t%s' % (record[0], change))

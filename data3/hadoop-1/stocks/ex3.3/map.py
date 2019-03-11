@@ -8,4 +8,4 @@ for line in sys.stdin:
     closing = int(record[2])
     if (closing > opening):
         change = float(closing - opening) / opening
-        print '%s\t%s' % (record[0], change)
+        print('%s\t%s' % (record[0], change))
