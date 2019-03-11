@@ -27,7 +27,7 @@ def getrecords():
 def combiner():
     for record in getrecords():
         # your code goes here
-        print '{0}\t{1} {2} {3} {4}'.format(record[0],min(v),max(v),sum(v),len(v))
+        print('{0}\t{1} {2} {3} {4}'.format(record[0],min(v),max(v),sum(v),len(v)))
 
 if __name__ == '__main__':
     combiner()

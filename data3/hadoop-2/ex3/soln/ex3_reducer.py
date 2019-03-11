@@ -28,7 +28,7 @@ def reducer():
     for record in getrecords():
         if len(record[1]) < 20:
             verses = ', '.join(map(lambda x:x.strip(), record[1]))
-            print '{0}\t{1}'.format(record[0], verses)
+            print('{0}\t{1}'.format(record[0], verses))
 
 if __name__ == '__main__':
     reducer()

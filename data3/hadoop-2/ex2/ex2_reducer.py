@@ -27,7 +27,7 @@ def getrecords():
 def reducer():
     for record in getrecords():
         # your code goes here
-        print '{0}\t{1} {2} {3} {4}'.format(record[0], v1, v2, v3, v4)
+        print('{0}\t{1} {2} {3} {4}'.format(record[0], v1, v2, v3, v4))
 
 if __name__ == '__main__':
     reducer()

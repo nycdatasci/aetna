@@ -14,7 +14,7 @@ def mapper():
             nums = verse.split(':')
             if len(nums) == 2 and nums[0].isdigit() and nums[1].isdigit():
                 for word in cleaner(words).split():
-                    print '{0}\t{1}'.format(word, verse)
+                    print('{0}\t{1}'.format(word, verse))
         except:
             pass
 

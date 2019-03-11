@@ -26,8 +26,8 @@ def getrecords():
 
 def combiner():
     for record in getrecords():
-        v = map(float, record[1])
-        print '{0}\t{1} {2} {3} {4}'.format(record[0],min(v),max(v),sum(v),len(v))
+        v = list(map(float, record[1]))
+        print('{0}\t{1} {2} {3} {4}'.format(record[0],min(v),max(v),sum(v),len(v)))
 
 if __name__ == '__main__':
     combiner()

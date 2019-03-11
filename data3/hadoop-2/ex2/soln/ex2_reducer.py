@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+from functools import reduce
 import sys
 
 def getrecords():
@@ -26,10 +26,10 @@ def getrecords():
 
 def reducer():
     for record in getrecords():
-        vals = map(lambda x: x.split(), record[1])
-        v1, v2, v3, v4 = reduce(lambda x,y:[float(a)+float(b) for a,b in zip(x,y)], vals)
+        vals = list(map(lambda x: x.split(), record[1]))
+        v1, v2, v3, v4 = list(reduce(lambda x,y:[float(a)+float(b) for a,b in zip(x,y)], vals))
         mean = float(v3) / float(v4)
-        print '{0}\t{1} {2} {3} {4} {5}'.format(record[0], v1, v2, v3, v4, mean)
+        print('{0}\t{1} {2} {3} {4} {5}'.format(record[0], v1, v2, v3, v4, mean))
 
 if __name__ == '__main__':
     reducer()
