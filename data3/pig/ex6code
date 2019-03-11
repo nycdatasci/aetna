@@ -1,0 +1,8 @@
+age = FOREACH admits GENERATE facility, age;
+gender = FOREACH admits GENERATE facility, gender;
+lengthofstay = FOREACH admits GENERATE facility, lengthofstay;
+grouped = COGROUP age BY facility,
+                  gender BY facility,
+                  lengthofstay BY facility;
+admits_copy = FOREACH grouped GENERATE group,
+                age.age, gender.gender, lengthofstay.lengthofstay;
