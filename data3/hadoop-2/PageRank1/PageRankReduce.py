@@ -2,8 +2,10 @@
 
 import sys
 import re
+
+
 def getrecords():
-  (key, val) = sys.stdin.readline().split("\t");
+  key, val = sys.stdin.readline().split("\t")
   vals = [val]
   while True:
       if key == None:
@@ -26,8 +28,8 @@ def getrecords():
 
 for record in getrecords():
   key = record[0]
-  outlinks = filter(lambda x: x[0].isalpha(), record[1])
+  outlinks = list(filter(lambda x: x[0].isalpha(), record[1]))
   outlinks = outlinks[0].strip().split(',')
-  vals = filter(lambda x: not x[0].isalpha(), record[1])
+  vals = list(filter(lambda x: not x[0].isalpha(), record[1]))
   val = sum(map(float, vals))
-  print "%s\t%s\t%s" %(key, str(val), '\t'.join(outlinks))
+  print("%s\t%s\t%s" %(key, str(val), '\t'.join(outlinks)))
