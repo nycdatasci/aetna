@@ -3,7 +3,7 @@ import sys
 import string
 
 def getrecords():
-   (key, val) = sys.stdin.readline().split("\t");
+   key, val = sys.stdin.readline().split("\t")
    vals = [val]
    while True:
       if key == None:
