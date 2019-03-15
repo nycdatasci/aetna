@@ -1,8 +1,8 @@
 1. Login
 
-	url: aetna.nycdatascience.com
-	username: <username>
-	password: <password>
+    - url: [aetna.nycdatascience.com]()
+    - username: \<username\>
+    - password: \<password\>
 
 2. Open Terminal
 
